@@ -1,0 +1,365 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+
+.responsive {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header .header__icon {
+    display: inline-block;
+    line-height: 100px;
+}
+
+.header .header-nav {
+    float: right;
+}
+
+.header .header-nav li {
+    display: inline-block;
+    list-style: none;
+    height: 100px;
+}
+
+.header .header-nav li a {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 11px;
+    color: #000;
+    line-height: 100px;
+}
+
+.header .header-nav li a:hover {
+    color: aqua;
+}
+
+
+/* Mobile nav CSS */
+.mobile-nav-btn {
+    line-height: 100px;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    display: none;
+    float: right;
+    margin-right: 60px;
+}
+
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.header-nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    ;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    height: 100%;
+    transform: translateX(-100%);
+}
+
+.header-nav-mobile__list li {
+    list-style: none;
+    margin-top: 40px;
+    display: block;
+}
+
+.header-nav-mobile__list li a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    margin-left: 40px;
+}
+
+.header-nav-mobile-close {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Content */
+.content {
+    height: 570px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #f6f6f6;
+}
+
+.content .content-section {
+    height: 570px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content .content-section-about {
+    padding-top: 100px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.content .content-section-about-container {
+    width: 435px;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.content .container-about__heading {
+    font-size: 38px;
+    font-weight: 600;
+    color: #000;
+}
+
+.content .container-about__para {
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.content .content-section-about-container span {
+    font-weight: 700;
+    color: #000;
+}
+
+.content .content-section-img {
+    width: 50%;
+    height: 100%;
+    margin-left: 29px;
+    margin-bottom: 10px;
+}
+
+.content .content-section-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Slide */
+.slide {
+    height: 100px;
+}
+
+.slide .slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.slide .slide-container a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Footer */
+.footer {
+    height: 284px;
+    background-color: #141414;
+}
+
+.footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 95px;
+}
+
+.footer .footer-content-company {
+    margin-right: 246px;
+    width: 230px;
+    max-width: 20%;
+}
+
+.footer .footer-content-company__heading {
+    color: #fff;
+}
+
+.footer .footer-content-company__subheading {
+    letter-spacing: 2;
+    font-family: 'Nunito Sans';
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 100;
+    margin-top: 23px;
+    font-size: 15px;
+}
+
+.footer .footer-content-company__subheading a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+    font-weight: 100
+}
+
+.footer .footer-content-contact__item--email {
+    font-family: 'Nunito Sans';
+}
+
+.footer .footer-content-contact {
+    margin-right: 137px;
+    margin-bottom: 48px;
+}
+
+.footer .footer-content-service {
+    margin-right: 137px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer .footer-content-social {
+    font-family: 'Nunito Sans';
+}
+
+.footer .footer-content-info {
+    margin-right: 136px;
+    font-family: 'Nunito Sans';
+}
+
+.footer .footer-content-contact a,
+.footer .footer-content-service__item,
+.footer .footer-content-social__item,
+.footer .footer-content-info__item {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+
+
+/*---------------- Responsive ----------------*/
+
+/* Tablet */
+@media (min-width: 782px) and (max-width: 1270px) {
+    .footer .footer-content-company {
+        margin-right: 50px;
+    }
+
+    .footer .footer-content-contact {
+        margin-right: 50px;
+    }
+
+    .footer .footer-content-service {
+        margin-right: 50px;
+    }
+
+    .footer .footer-content-info {
+        margin-right: 50px;
+    }
+
+    .image .image-item {
+        width: calc(100%/3);
+        height: calc(100%/4);
+    }
+}
+
+@media(max-width:980px) {
+    .content {
+        height: auto;
+    }
+
+    .content .content-section {
+        height: auto;
+        display: block;
+    }
+
+    .content .content-section-about {
+        padding-top: 0%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .content .content-section-about-container{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content .content-section-img {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 782px) {
+    .mobile-nav-btn {
+        display: block;
+    }
+
+    .nav__input:checked~.nav_overlay {
+        display: block;
+    }
+
+    .nav__input:checked~.header-nav-mobile {
+        transform: translateX(0%);
+    }
+
+    .header .header__icon {
+        margin-left: 60px;
+    }
+
+    .header .header-nav {
+        display: none;
+    }
+
+    .footer .footer-content-company {
+        margin-right: 10px;
+    }
+
+    .footer .footer-content-contact {
+        margin-right: 24px;
+    }
+
+    .footer .footer-content-service {
+        margin-right: 10px;
+    }
+
+    .footer .footer-content-info {
+        margin-right: 10px;
+    }
+
+}
